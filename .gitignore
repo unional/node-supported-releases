@@ -44,3 +44,4 @@ build/Release
 # project folders
 .ts
 lib*
+tsconfig.tsbuildinfo

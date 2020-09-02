@@ -1,14 +1,14 @@
 {
-  "name": "node-active-releases",
+  "name": "node-supported-releases",
   "version": "0.0.0",
-  "description": "Get currently supported NodeJS releases",
-  "homepage": "https://github.com/unional/node-active-releases",
+  "description": "Utility to query supported NodeJS releases",
+  "homepage": "https://github.com/unional/node-supported-releases",
   "bugs": {
-    "url": "https://github.com/unional/node-active-releases/issues"
+    "url": "https://github.com/unional/node-supported-releases/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/unional/node-active-releases.git"
+    "url": "https://github.com/unional/node-supported-releases.git"
   },
   "license": "MIT",
   "author": {
@@ -16,19 +16,62 @@
     "email": "homawong@gmail.com"
   },
   "sideEffects": false,
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "nsr": "lib/bin.js"
+  },
+  "scripts": {
+    "build": "tsc -i",
+    "build:watch": "tsc -i -w",
+    "clean": "rimraf lib",
+    "coverage": "yarn test --coverage",
+    "depcheck": "dependency-check . --unused --no-dev && dependency-check . --missing --no-dev",
+    "lint": "eslint --ext=js,jsx,ts,tsx .",
+    "nsr": "node lib/bin.js",
+    "nuke": "yarn clean && rimraf node_modules",
+    "test": "jest --maxworkers=60%",
+    "test:watch": "yarn test --watch",
+    "verify": "yarn lint && yarn build && yarn depcheck && yarn coverage",
+    "watch": "yarn test:watch"
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "dependencies": {
-    "node-releases": "^1.1.60"
+    "clibuilder": "^6.4.2",
+    "node-releases": "*",
+    "type-plus": "^1.35.1",
+    "update-notifier": "^4.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@changesets/cli": "^2.10.2",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^26.0.12",
+    "@types/update-notifier": "^4.1.1",
+    "babel-jest": "^26.3.0",
     "commitlint-circle": "^1.0.0",
-    "husky": "^4.2.3"
+    "eslint": "^7.7.0",
+    "eslint-plugin-harmony": "^3.0.1",
+    "husky": "^4.2.3",
+    "jest": "^26.4.2",
+    "jest-progress-tracker": "^2.0.2",
+    "jest-watch-repeat": "^2.0.0",
+    "jest-watch-suspend": "^1.1.2",
+    "jest-watch-toggle-config": "^2.0.1",
+    "jest-watch-typeahead": "^0.6.0",
+    "mocktomata": "^7.0.0-beta.5",
+    "npm-check-updates": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.0.2",
+    "yarn": "^1.22.5"
   }
 }

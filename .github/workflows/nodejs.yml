@@ -86,13 +86,13 @@ jobs:
       - test
     steps:
       - uses: actions/checkout@v2
-      # - name: Git Identity
-      #   run: |
-      #     git config --global user.name 'unional'
-      #     git config --global user.email 'homawong@gmail.com'
-      #     git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Git Identity
+        run: |
+          git config --global user.name 'unional'
+          git config --global user.email 'homawong@gmail.com'
+          git remote set-url origin https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: setup yarn-cache
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -109,15 +109,12 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
       - run: yarn
-      # - name: Authenticate with Registry
-      #   run: |
-      #       yarn logout
-      #       echo "registry=http://registry.npmjs.org/" >> .npmrc
-      #       echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
-      #       npm whoami
-      #   env:
-      #       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - run: yarn release-it --ci
+      - name: Authenticate with Registry
+        run: |
+            yarn logout
+            echo "registry=http://registry.npmjs.org/" >> .npmrc
+            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+            npm whoami
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+            NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: yarn release-it --ci

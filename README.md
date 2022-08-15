@@ -7,13 +7,13 @@
 
 Get NodeJS currently supported releases.
 
-## install
+## Install
 
 ```sh
 yarn add node-supported-releases
 ```
 
-## usage
+## Usage
 
 ```sh
 export SUPPORTED_RELEASES=yarn nsr

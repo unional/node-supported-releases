@@ -1,0 +1,9 @@
+ignores:
+  - '@commitlint/cli'
+  - '@commitlint/config-conventional'
+  - '@types/jest'
+  - babel-jest
+  - codacy-coverage
+  - commitlint-circle
+  - npm-check-updates
+  - release-it

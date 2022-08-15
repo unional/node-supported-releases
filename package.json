@@ -61,7 +61,7 @@
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "@types/jest": "^26.0.12",
-    "@types/update-notifier": "^4.1.1",
+    "@types/update-notifier": "^6.0.0",
     "babel-jest": "^26.3.0",
     "codacy-coverage": "^3.4.0",
     "commitlint-circle": "^1.0.0",

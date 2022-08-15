@@ -68,7 +68,7 @@
     "depcheck": "^1.4.3",
     "eslint": "^8.0.0",
     "eslint-plugin-harmony": "^7.0.0",
-    "husky": "^4.2.3",
+    "husky": "^8.0.0",
     "jest": "^26.4.2",
     "jest-progress-tracker": "^2.0.2",
     "jest-watch-repeat": "^2.0.0",

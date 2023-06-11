@@ -19,10 +19,10 @@ yarn add node-supported-releases
 export SUPPORTED_RELEASES=yarn nsr
 ```
 
-[npm-image]: https://img.shields.io/npm/v/assertron.svg?style=flat
-[npm-url]: https://npmjs.org/package/assertron
-[downloads-image]: https://img.shields.io/npm/dm/assertron.svg?style=flat
-[downloads-url]: https://npmjs.org/package/assertron
+[npm-image]: https://img.shields.io/npm/v/node-supported-releases.svg?style=flat
+[npm-url]: https://npmjs.org/package/node-supported-releases
+[downloads-image]: https://img.shields.io/npm/dm/node-supported-releases.svg?style=flat
+[downloads-url]: https://npmjs.org/package/node-supported-releases
 
 [vscode-image]: https://img.shields.io/badge/vscode-ready-green.svg
 [vscode-url]: https://code.visualstudio.com/

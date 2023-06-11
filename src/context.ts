@@ -1,5 +1,13 @@
-import schedules from 'node-releases/data/release-schedule/release-schedule.json'
+import schedules from 'node-releases/schedule.json'
 import { getTodayTime } from './dateUtils'
+
+export interface Schedule {
+  start: string,
+  end: string,
+  codename?: string,
+  lts?: string,
+  maintenance?: string,
+}
 
 export const context: {
   today: number,
@@ -7,14 +15,6 @@ export const context: {
 } = {
   today: getTodayTime(),
   schedules
-}
-
-export type Schedule = {
-  start: string,
-  end: string,
-  codename?: string,
-  lts?: string,
-  maintenance?: string,
 }
 
 export function resetContext() {

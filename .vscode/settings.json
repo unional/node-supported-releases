@@ -1,4 +1,7 @@
 {
+  "cSpell.words": [
+    "clibuilder"
+  ],
   "eslint.enable": true,
   "json.schemas": [
     {

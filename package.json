@@ -47,7 +47,7 @@
     }
   },
   "dependencies": {
-    "clibuilder": "^7.2.1",
+    "clibuilder": "^8.0.0",
     "node-releases": "*",
     "type-plus": "^4.11.1",
     "update-notifier": "^6.0.2"

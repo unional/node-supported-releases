@@ -2362,6 +2362,11 @@ acorn@^8.7.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
   integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
+acorn@^8.8.2:
+  version "8.14.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.1.tgz#721d5dc10f7d5b5609a891773d47731796935dfb"
+  integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
+
 agent-base@4, agent-base@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-4.3.0.tgz#8165f01c436009bccad0b1d122f05ed770efc6ee"
@@ -7110,6 +7115,15 @@ tersify@^3.10.2:
     is-buffer "^2.0.5"
     unpartial "^0.7.4"
 
+tersify@^3.11.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/tersify/-/tersify-3.12.1.tgz#1aa5a709a02daba24d694f0896fb8a233f482361"
+  integrity sha512-VwzXGHZSOB4T27s4uvh9v8FYrNXyfVz0nBQi28TDwrZoQwT8ZJUp1W2Ff73ekN07stJSb0D+pr6iXeNeFqTI6Q==
+  dependencies:
+    acorn "^8.8.2"
+    is-buffer "^2.0.5"
+    unpartial "^1.0.4"
+
 test-exclude@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-6.0.0.tgz#04a8698661d805ea6fa293b6cb9e63ac044ef15e"
@@ -7267,13 +7281,21 @@ type-fest@^3.0.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.11.1.tgz#d8e62c7f42e14537d5b8796de5450d541f3a33a7"
   integrity sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==
 
-type-plus@^4.0.0, type-plus@^4.11.1, type-plus@^4.9.1:
+type-plus@^4.0.0, type-plus@^4.9.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-4.11.1.tgz#83c30f76c715e7170f5ec45444402c74f25bbc1e"
   integrity sha512-i/Q45slBZzQraXRTOc9aEfYIDW28BxiH7v0FtTUa7nXIe4Lotu9eDIJ4I/21gmkf/C0EPCNxxUiIB207z+Xyww==
   dependencies:
     tersify "^3.10.2"
     unpartial "^0.7.5"
+
+type-plus@^7.0.0:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-7.6.2.tgz#76edc22b04e803c047df94c54a69ddbed7141b1d"
+  integrity sha512-qUlXv9Y0/W56pg38m275IMD3WA03QbVoqNY16S3kmwtuA4gOT2iheyUdOp8NWrmXWpf7om98hzr7AZD/eW2jLA==
+  dependencies:
+    tersify "^3.11.1"
+    unpartial "^1.0.4"
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
@@ -7359,7 +7381,7 @@ unpartial@^0.7.4, unpartial@^0.7.5:
   resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-0.7.5.tgz#68393e88f4e4d6ac2f622a18dfc9e495a32ab910"
   integrity sha512-02G/AkbF7MkgaEOAJmCe7P0UYzJVkMkAIU5YEJsO5QmDX7vkqyNctVi1gPm8YLVlGo5T/Qe/hYA66AuliEKBag==
 
-unpartial@^1.0.5:
+unpartial@^1.0.4, unpartial@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-1.0.5.tgz#ade2b97d4fa309dc6a7fdca6a6fdbf76817fdd7e"
   integrity sha512-yAqaXcachjgZUnM2yIkf+4KJhmyuoj7stBvlnlZpB15OYVbKnLhgJfmLW7qkpzLHCdsm1bEFvhyN9hCmlZ3uuw==

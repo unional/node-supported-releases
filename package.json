@@ -72,7 +72,7 @@
     "husky": "^9.0.0",
     "jest": "^30.0.0",
     "jest-progress-tracker": "^3.0.0",
-    "jest-watch-repeat": "^3.0.0",
+    "jest-watch-repeat": "^4.0.0",
     "jest-watch-suspend": "^1.1.2",
     "jest-watch-toggle-config": "^3.0.0",
     "jest-watch-typeahead": "^3.0.0",

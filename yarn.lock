@@ -2484,6 +2484,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.48.tgz#22d386f32b24fb644940b606ed393b56be7d8686"
   integrity sha512-Z9r9UWlNeNkYnxybm+1fc0jxUNjZqRekTAr1pG0qdXe9apT9yCiqk1c4VvKQJsFpnchU4+fLl25MabSLA2wxIw==
 
+"@types/node@^24.0.0":
+  version "24.13.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-24.13.3.tgz#49f18bd3c647866dcda51a0756c145e14590ce16"
+  integrity sha512-Dh8vAsV36ig5wa9OX4pXvMc9D3Veibfw2wix0CUwYODLD8nkj9UsLjASr49nPg+2eKzxhBV+v7L8pXvT4e639Q==
+  dependencies:
+    undici-types "~7.18.0"
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -2867,6 +2874,11 @@ acorn@^8.15.0:
   version "8.15.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.15.0.tgz#a360898bc415edaac46c8241f6383975b930b816"
   integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
+
+acorn@^8.18.0:
+  version "8.18.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.18.0.tgz#4faf01b2d6d326bfeed97aea1f52220b5f4c1940"
+  integrity sha512-lGq+9yr1/GuAWaVYIHRjvvySG5/4VfKIvC8EWxStPdcDh/Ka7FG3twP6v4d5BkravUilhIAsG4Qj83t02LWUPQ==
 
 acorn@^8.7.1:
   version "8.8.0"
@@ -7525,6 +7537,14 @@ tersify@^3.10.2:
     is-buffer "^2.0.5"
     unpartial "^0.7.4"
 
+tersify@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/tersify/-/tersify-4.0.6.tgz#77bd9d6f03921314db9fe435945395c89df85903"
+  integrity sha512-+z2dTeRvbPyI7qiAmBY+VgWnhhN9IuaGjgrPfeF33hI4A/Yd9KT11tbc4l8vfIA3L/5EWiE0swvxOfAckGRuzA==
+  dependencies:
+    acorn "^8.18.0"
+    unpartial "^1.0.7"
+
 test-exclude@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/test-exclude/-/test-exclude-6.0.0.tgz#04a8698661d805ea6fa293b6cb9e63ac044ef15e"
@@ -7655,7 +7675,15 @@ type-fest@^3.0.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-3.11.1.tgz#d8e62c7f42e14537d5b8796de5450d541f3a33a7"
   integrity sha512-aCuRNRERRVh33lgQaJRlUxZqzfhzwTrsE98Mc3o3VXqmiaQdHacgUtJ0esp+7MvZ92qhtzKPeusaX6vIEcoreA==
 
-type-plus@^4.0.0, type-plus@^4.11.1, type-plus@^4.9.1:
+type-plus@8.0.0-beta.10:
+  version "8.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-8.0.0-beta.10.tgz#82893a78ffb6b99171ba00b3bd81edb025ff2855"
+  integrity sha512-ZdhzmQg7f8oxt5Cbivslk8o3zef8L3ibpKIeGH1ESf73y8ZEY1z9fe4Z3fTxcjmFOb8ESE1TbW/MCgEvpeLC4w==
+  dependencies:
+    tersify "^4.0.6"
+    unpartial "^1.0.7"
+
+type-plus@^4.0.0, type-plus@^4.9.1:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-4.11.1.tgz#83c30f76c715e7170f5ec45444402c74f25bbc1e"
   integrity sha512-i/Q45slBZzQraXRTOc9aEfYIDW28BxiH7v0FtTUa7nXIe4Lotu9eDIJ4I/21gmkf/C0EPCNxxUiIB207z+Xyww==
@@ -7695,6 +7723,11 @@ typescript@^7.0.0:
     "@typescript/typescript-sunos-x64" "7.0.2"
     "@typescript/typescript-win32-arm64" "7.0.2"
     "@typescript/typescript-win32-x64" "7.0.2"
+
+undici-types@~7.18.0:
+  version "7.18.2"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-7.18.2.tgz#29357a89e7b7ca4aef3bf0fd3fd0cd73884229e9"
+  integrity sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==
 
 undici@7.29.0:
   version "7.29.0"
@@ -7762,6 +7795,11 @@ unpartial@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-1.0.5.tgz#ade2b97d4fa309dc6a7fdca6a6fdbf76817fdd7e"
   integrity sha512-yAqaXcachjgZUnM2yIkf+4KJhmyuoj7stBvlnlZpB15OYVbKnLhgJfmLW7qkpzLHCdsm1bEFvhyN9hCmlZ3uuw==
+
+unpartial@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-1.0.7.tgz#2defdff30f5210e226ce22d06dd022305019b527"
+  integrity sha512-DeyxEI3KSlmDihGAk3Js/p/Ca886ymIz39pWH3VVV/LZ36MsRETylFS37fdzWBWDjMlzB63Rdy2KLCdetOMPig==
 
 unrs-resolver@^1.7.11:
   version "1.7.12"

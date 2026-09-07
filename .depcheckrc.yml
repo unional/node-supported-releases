@@ -2,6 +2,7 @@ ignores:
   - '@commitlint/cli'
   - '@commitlint/config-conventional'
   - '@types/jest'
+  - '@types/node'
   - babel-jest
   - codacy-coverage
   - commitlint-circle

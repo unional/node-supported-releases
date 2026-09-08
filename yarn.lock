@@ -3174,19 +3174,19 @@ brace-expansion@^5.0.8:
   dependencies:
     balanced-match "^4.0.2"
 
-braces@^3.0.2, braces@~3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
-  integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
-  dependencies:
-    fill-range "^7.0.1"
-
 braces@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.3.tgz#490332f40919452272d55a8480adc0c441358789"
   integrity sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==
   dependencies:
     fill-range "^7.1.1"
+
+braces@~3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
+  integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
+  dependencies:
+    fill-range "^7.0.1"
 
 browser-stdout@1.3.1:
   version "1.3.1"
@@ -3309,7 +3309,7 @@ caseless@~0.12.0:
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-chalk@^2.0.0, chalk@^2.4.2:
+chalk@^2.0.0:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
@@ -5488,13 +5488,13 @@ jest-watch-repeat@^4.0.0:
     jest-watcher "^30.0.0"
     unpartial "^1.0.7"
 
-jest-watch-suspend@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/jest-watch-suspend/-/jest-watch-suspend-1.1.2.tgz#23df86243a0abaa4f68c1e384a5e22de0e797b77"
-  integrity sha512-sJRE+xj+jBvCdFhjFzJWFh9bg15v1YbSgmpvSCIR5ttg/Cn+608yfRjtLCDQx3ZVcIYlvorgsWIzW+lDFAhMrQ==
+jest-watch-suspend@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/jest-watch-suspend/-/jest-watch-suspend-2.0.0.tgz#c9ac27782d38fa6ed2255611ba49b84050657174"
+  integrity sha512-tnN8b++VmHgcsiuStV4pCg53As8VHuqrFySiv0MO/8S4x9CDs97yS0Cc1ZxDkrpkmrDdtiski14aqUGXexr45w==
   dependencies:
-    chalk "^2.4.2"
-    unpartial "^0.6.1"
+    chalk "^4.1.2"
+    unpartial "^1.0.6"
 
 jest-watch-toggle-config@^3.0.0:
   version "3.0.0"
@@ -5894,14 +5894,6 @@ merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==
-
-micromatch@^4.0.4:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
-  integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
-  dependencies:
-    braces "^3.0.2"
-    picomatch "^2.3.1"
 
 micromatch@^4.0.8:
   version "4.0.8"
@@ -7568,7 +7560,7 @@ universal-user-agent@^7.0.0, universal-user-agent@^7.0.2:
   resolved "https://registry.yarnpkg.com/universal-user-agent/-/universal-user-agent-7.0.2.tgz#52e7d0e9b3dc4df06cc33cb2b9fd79041a54827e"
   integrity sha512-0JCqzSKnStlRRQfCdowvqy3cy0Dvtlb8xecj/H8JFZuCze4rwjPZQOgvFvn0Ws/usCHQFGpyr+pB9adaGwXn4Q==
 
-unpartial@^0.6.1, unpartial@^0.6.3:
+unpartial@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-0.6.3.tgz#75557ac68fce3e9fcc983cd76e3d505b3a5ce4a3"
   integrity sha512-U4pMxDxAyV7n5Hp6q9OMjCHLkTU6JwTxzignyXv60u44HlhUmaT+u18AAKM87+EtPkdkOlsSRmzJL4OoHROxbw==
@@ -7577,6 +7569,11 @@ unpartial@^0.7.4, unpartial@^0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-0.7.5.tgz#68393e88f4e4d6ac2f622a18dfc9e495a32ab910"
   integrity sha512-02G/AkbF7MkgaEOAJmCe7P0UYzJVkMkAIU5YEJsO5QmDX7vkqyNctVi1gPm8YLVlGo5T/Qe/hYA66AuliEKBag==
+
+unpartial@^1.0.6:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/unpartial/-/unpartial-1.0.8.tgz#854cca4a3c41a985e4e8637be93b19c8f5f4450b"
+  integrity sha512-LDZX3wrdUWQdVKLOgouW+fCqNfietx11UzdipDBRsnx1LWKBkv4FpA9OHVeSNz12STLk6oz07dgENEWnHyAgIg==
 
 unpartial@^1.0.7:
   version "1.0.7"

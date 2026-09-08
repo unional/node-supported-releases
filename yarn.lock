@@ -7459,10 +7459,10 @@ type-fest@^2.13.0, type-fest@^2.5.1:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.18.0.tgz#fdef3a74e0a9e68ebe46054836650fb91ac3881e"
   integrity sha512-pRS+/yrW5TjPPHNOvxhbNZexr2bS63WjrMU8a+VzEBhUi9Tz1pZeD+vQz3ut0svZ46P+SRqMEPnJmk2XnvNzTw==
 
-type-plus@8.0.0-beta.10:
-  version "8.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-8.0.0-beta.10.tgz#82893a78ffb6b99171ba00b3bd81edb025ff2855"
-  integrity sha512-ZdhzmQg7f8oxt5Cbivslk8o3zef8L3ibpKIeGH1ESf73y8ZEY1z9fe4Z3fTxcjmFOb8ESE1TbW/MCgEvpeLC4w==
+type-plus@8.0.0-beta.11:
+  version "8.0.0-beta.11"
+  resolved "https://registry.yarnpkg.com/type-plus/-/type-plus-8.0.0-beta.11.tgz#896f48bb8fe4ba8adb7d201ee803290c62d3dec5"
+  integrity sha512-8/QsyrWhzvUpq7HREOUR4T4sVMiVMBYvMLH9brYvfwc0Nr71a2mPAafrWwg6W5EWsgIr0TUBHBNtwO8neKZUUg==
   dependencies:
     tersify "^4.0.6"
     unpartial "^1.0.7"

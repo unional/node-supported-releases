@@ -47,9 +47,9 @@
     }
   },
   "dependencies": {
-    "clibuilder": "^7.2.1",
+    "clibuilder": "^11.3.1",
     "node-releases": "*",
-    "type-plus": "8.0.0-beta.10",
+    "type-plus": "8.0.0-beta.12",
     "update-notifier": "^6.0.2"
   },
   "devDependencies": {
@@ -72,7 +72,7 @@
     "husky": "^9.0.0",
     "jest": "^30.0.0",
     "jest-progress-tracker": "^4.0.0",
-    "jest-watch-repeat": "^4.0.0",
+    "jest-watch-repeat": "^4.0.2",
     "jest-watch-suspend": "^2.0.0",
     "jest-watch-toggle-config": "^3.0.0",
     "jest-watch-typeahead": "^3.0.0",
